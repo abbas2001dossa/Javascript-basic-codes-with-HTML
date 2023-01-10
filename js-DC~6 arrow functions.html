@@ -1,0 +1,133 @@
+<!-- JavaScript Tutorial: Arrow Functions In JavaScript | Web Development Tutorials #60 -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cont">
+        This is arrow functions tutorial 
+    </div>
+    <script>
+        function greet()
+        {
+            console.log('good morning ');
+        }
+        greet();
+
+
+
+        // or you culd aslo write bu using arrow fucnciton ! 
+        // arrow funvction is a shortcut 
+        greet2 = ()=> {
+            console.log('good morning 2.0 ! ');
+
+        }
+
+        greet2();
+
+
+
+        // set tieme out arrow funciton 
+        // two arguments -> the function , 3000
+        setTimeout(
+            
+        ()=> {
+            console.log("hurrah ");
+        } , 3000
+        
+        
+        );
+
+
+
+
+
+        // 
+        let sum= (a,b) =>{
+            return a+b;
+        }
+        // put iin console-> sum(12,13)-> it would exit 25 ! 
+
+        // -> shortcut for the funiton above 
+
+        let sum2=(a,b)=> a+b ;
+
+
+
+
+
+
+        // ANOTHER SHORTCUT FUNCTION -USING ARROW KEY
+        let half = a => a/2;
+        // a/2 would be returned ! 
+
+
+
+
+
+        // objects
+
+
+        //~ defined
+        let obj1={
+
+            names: ["hary", "abbas" , "sky" ," gost"],
+            speak()
+            {
+                // loop
+                // consider the student a var to store array element 
+                this.names.forEach((student)=>{
+
+                    console.log("awake awake bish ! ->" + student );
+                });
+            }
+
+        }
+        
+
+        // ~called
+        obj1.speak();
+
+        // --------
+        // another example-> advantage of arrow funciton 
+
+        let obj2=
+        {
+            greetings: "hello world ",
+            names: ["hary", "abbas" , "sky" ," gost"],
+            speak()
+            {
+                // loop
+                // consider the student a var to store array element 
+                this.names.forEach((student)=>{
+
+                   console.log("awake awake bish ! ->"+this.greetings+"--->" + student );
+                    //    the 'this' points the greetings in th escope of the function, however the fucntion have no this.
+                    // furthermore -> the arrow function allows to use the exernal greetings fucntion !
+
+
+                });
+            }
+
+        }
+
+        
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

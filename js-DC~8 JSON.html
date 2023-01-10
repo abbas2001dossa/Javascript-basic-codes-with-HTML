@@ -1,0 +1,61 @@
+<!-- JavaScript Tutorial: Working with JSON in JavaScript | Web Development Tutorials #62 -->
+
+<!-- javascript object notation -> used for data transportatioin  -->
+<!--  a notation to transport data -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+
+    <div class="cont">
+        this is my cnotainer 
+    </div>
+
+
+    <script>
+        let json ={
+            name : "harry",
+            channel :"lol",
+            friend:"roahs ",
+            food:"bhindi"
+        }
+        console.log(json);
+
+        // object-> string 
+        // converting json object to a string 
+        let jsonStr = JSON.stringify(json);
+
+
+        console.log(jsonStr);
+        // now its like a noral string -> we can do whtaver we want like we do with a normal string 
+
+
+        // replaced harry with dossa in jso string which we can do witbh the help of string function ~ 
+
+        jsonStr= jsonStr.replace('harry' , 'dossa');
+        console.log(jsonStr);
+
+
+
+        // string-> oject 
+        // converting json string to sn objcct :- with the parse function 
+        json = JSON.parse(jsonStr);
+        console.log(json);
+
+
+        
+
+
+
+
+    </script>
+    
+</body>
+</html>

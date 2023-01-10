@@ -1,0 +1,132 @@
+<!-- JavaScript Tutorial: Events & Listening to Events | Web Development Tutorials #57 -->
+<!-- event ->signal -ke kuch hua he ! -->
+<!-- some are very popular important events -> click buttons, etc -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    #btn{
+        padding: 10px 14px;
+        color: red;
+        border: 2px solid black;
+        color: rgb(19, 16, 16);
+        font-weight: bold;
+        background-color: aquamarine;
+        border-radius: 9px;
+        cursor: pointer;
+    }
+
+
+</style>
+<body>
+
+    <!-- event fired :- event hua he  -->
+    
+    <!-- browser events  -->
+    <!-- click -->
+    <!-- context menu  -->
+    <!-- mouse over / mouse out  -->
+    <!-- mouse down / mouse up -->
+    <!-- mouse move -->
+
+    <!-- ~form events  -->
+    <!-- submit  -->
+
+
+    <!-- DOM Content loaded  -->
+
+    <!-- transitons  -->
+
+
+
+
+
+    <div class="cont">
+        <h1> HELLO THIS IS HEADING </h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nemo tempora incidunt dicta quo architecto mollitia iusto voluptate impedit qui reprehenderit praesentium, fugiat itaque natus dolor voluptatibus, asperiores, culpa error!</p>
+
+    </div>
+
+
+    <!-- to implement hide / show event in this button  -->
+    <button id="btn" onclick="togglehide()"> show/hide </button>
+    <!-- on click means when clicked ! then that function would open !   -->
+
+
+    <script>
+
+
+
+        // toggle-> means hide/show krna
+        function togglehide()
+        {
+
+            //
+            let btn= document.getElementById('btn');
+            let para = document.getElementById('para');
+            //
+            // you can also comment out these 
+            //and use the one directed below ! 
+
+
+
+            if ( para.style.display != 'none'){
+                para.style.display= 'none';
+            }
+            else{
+                para.style.display='block';
+            }
+
+            
+
+
+        }
+        // Thus with the help of js we can show/hide the function 
+
+
+
+
+        // you can also use JS , to add an event where when mouse is hovered 
+        // tohh para pe wo event chal jayega ! 
+
+        let para =document.getElementById('para');
+
+        // add an event when on para the mouse is hovered -> and the run function 
+        // works 
+        para.addEventListener('mouseover' , function run (){
+
+            // alert(' MOUSE INSIDE ! ');
+            // feed back msg
+
+
+            console.log(' mouse is inside ');
+
+        });
+
+
+
+        // mouse when hovered outside 
+        para.addEventListener('mouseout' , function run(){
+            // alert('MOUSE outside ! ');
+
+            console.log( ' mouse in outside ');
+            // displayed on console !
+        });
+        
+
+
+
+
+
+    </script>
+</body>
+</html>

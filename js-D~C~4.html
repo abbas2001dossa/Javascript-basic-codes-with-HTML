@@ -1,0 +1,124 @@
+<!-- JavaScript Tutorial: setInterval & setTimeOut | Web Development Tutorials #58 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+
+</script>
+
+<body>
+
+    <div class="cont">
+        time now is 
+        <!-- we making span now  with id time -->
+
+        <span id="time"></span>
+    </div>
+    <script>
+        // console.log("58");
+
+        // set time out
+        // allows us to run the function once after theh interval of time 
+
+        // clear time out
+        // allows us to run the function repeatedly after the time interval .
+
+
+        function greet(){
+            console.log("hello good afternoon !");
+        }
+
+
+        // 5 seconds bad hello good afternoon likha hua ajayega ! 
+        setTimeout(greet, 5000);
+
+
+        // 
+
+        // only write fucniton name -> we arent calling the function ~ 
+        function greet2(name){
+            console.log(" this is :- " + name );
+        }
+
+        // after 3 seconds 
+        // third argument -> an argument passed in the function !
+        let timeout = setTimeout(greet2,  5000 ,"dossa" );
+        
+        // time out would store the function id -> of settimeout ! 
+
+
+
+
+        // suppose you have used a function set time out whereas something occured that
+        // now you no longer need that function so theres a funciton 
+        // clear time out to clear the set function called !
+
+
+        console.log(timeout);
+        // time out consists of the id by set time out fucniton .
+        clearTimeout(timeout);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // SET INTERVAL 
+        // keeps running every second -> liek a looop 
+        // yeih same output print hoga bar bar bar
+
+        let tm=setInterval(greet2 , 1000 , "loser");
+        // likwise it returns the timeout id too ! 
+
+
+        clearInterval(tm);
+
+
+
+
+
+
+        // display time 
+        function disp(){
+            time = new Date();
+
+            console.log(time);
+            // siince the function is called every second ->
+            // every second on teh console the time is written and updated on screen 
+
+
+
+
+            // putting the time extracted from above ( new date()  )-> into the span we made in html whom had an id time .
+            //thus the time transfered from time=new Date(); -> to inner html text ! 
+            document.getElementById('time').innerHTML = time;
+
+        }
+
+
+        // disp funciton called every seocnd ! 
+        setInterval(disp, 1000);
+
+        // orderwise:- 
+        // seetinterval -> disp -> inner html ! 
+
+    </script>
+    
+</body>
+</html>

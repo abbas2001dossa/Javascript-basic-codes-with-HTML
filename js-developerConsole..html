@@ -1,0 +1,615 @@
+ <!-- Writing in-browser JavaScript and Developer
+  Console | Web Development Tutorials #47 -->
+  <!-- Variables, Data Types and Operators in JavaScript
+     | Web Development Tutorials #48 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JS TUTORIAL </title>
+</head>
+<body>
+
+    <!-- 47 -->
+    <div class="cont">
+        <div class="row">
+            <p>This is a row in this container ! </p>
+        </div>
+    </div>
+
+
+
+    <!-- 48: variables and datatypes  -->
+    <div class="cont2">
+        <h1>This is a heading </h1>
+
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nemo sit placeat vitae excepturi voluptatibus omnis voluptas nobis fugiat! Dignissimos aspernatur itaque cumque, iste amet ex veritatis hic exercitationem sit!</p>
+
+        </div>
+    </div>
+
+
+    <!--49: Strings in JavaScript | Web Development Tutorials #49
+ -->
+
+
+
+
+
+
+    
+    <!-- you can put js either in body or in head --- body me dalo acha he  -->
+    <script>
+        // write iur js code  here 
+        // in the  console log all errors would be showed 
+        
+        // console.log('Hello World !');
+
+
+
+
+
+
+
+
+// ------------------------------------------
+
+
+        // Variables, Data Types and Operators in JavaScript | Web Development Tutorials #48
+        // lec 48
+
+        var a = 78;
+        var b ="harry";
+        // console.log(b);
+        console.log(a);
+        c=34.55;
+        console.log(c);
+
+
+        // operators in js
+        // unry n binary
+        // +,-,=,/
+
+
+        // operand - entities on which operators operaate 
+        // c = -c
+        // x=x+6
+
+        c=c + 100;
+        console.log(c);
+
+        
+        var num1=56;
+        var num2 = 23;
+        console.log('The sum of num1 + num2 is :' + (num1+num2));
+
+        // increment num1++
+// ----------------------------------------------------
+// Strings in JavaScript | Web Development Tutorials #49
+
+
+        var strin = "hello";
+        var name=" abbas";
+        var name2=" dossa";
+        // u can use double qutes and single quotes as well ""
+
+        // console.log(strin);
+
+        // $-> string fill in the blank ki trh hojati he !
+
+        var temp= `${strin} how are you doing sir ${name}`;
+        console.log(temp);
+        console.log(strin + name2);
+
+        // length of string 
+        var len= name.length;
+        console.log(" lnght of name is " + len );
+
+
+        console.log("hello \n world");
+        console.log("abbas \t dossa");
+
+
+        // pointers
+        // string-> s -> capital in JAVA AND JAVA SCRIPT 
+
+        // normal tareeka se he banalo string -. cosntructor se na banao 
+        var y = new String ("hey ther rebud how u doing ");
+        console.log(y);
+
+
+
+
+        //50: String Functions in JavaScript | Web Development Tutorials #50
+
+        var str="This is boutnt";
+        var pos= str.indexOf('is');
+        console.log(pos);
+
+
+        // indexOf -> for any  first susbstring !
+        // lastindexOf->last substring 
+
+        pos=str.lastIndexOf('is');
+        console.log(pos);
+
+
+
+        // slicing -multiple methods
+
+        // substring from a string - slcicing 
+        var substr= str.slice(1,6);
+        console.log(substr);
+
+        //substring -> cant take neg values 
+        substr= str.substring(1,7);
+        console.log(substr);
+
+
+        // substr-. 1 se start kro -> aur _ length extract kro 
+        substr=str.substr(1,3);
+        console.log(substr);
+
+
+
+
+        // replace
+        // _ first-> which one to replace with 
+        // _ second-> to replace with whom 
+        var replaced=str.replace('boutnt','abbas dossa');
+        console.log(str);
+        console.log(replaced);
+
+        console.log(str[2]);
+
+        // upper case and lower case  
+        console.log(str.toLocaleUpperCase());
+        console.log(str.toLowerCase());
+
+
+
+
+        // to join two strings 
+        // concat method 
+        var newstr = str.concat(' this is new string ');
+        console.log(newstr);
+
+
+
+        // var.trim() -> trims the whitespaces of string/variable
+        
+        
+        // is index pe kya charxter heh r
+        var char3= str.charAt(2);
+        console.log(char3);
+
+
+        // charcode->
+        // gievs you teh character code 
+        // charCodeAt
+
+
+
+
+
+
+        // Scope, If-else Conditionals & Switch Case in JavaScript | Web Development Tutorials #51
+
+
+        // overall scope
+        var string1='this is string 1';
+        console.log(string1);
+
+
+        // restricted scope of a variable in a certain block k
+        // the first a=u is global
+        let ab = "u";
+        {
+            // let a ="u6";
+            // the restricted block 
+
+        }
+        // always use let 
+
+
+
+
+
+        // constant
+        const abc="This cannot be chanegd ";
+    
+        console.log(abc);
+        // a="this is ";
+        // cannot change const  -never
+        
+        
+
+        // if-else statements
+        let agee=34;
+        if (agee>18){
+            console.log("cold drink ");
+        }
+        else if(agee==34){
+            console.log("hy");
+        }
+        else{
+            console.log("lol");
+        }
+
+
+
+        // switch case 
+        const cups=3;
+        switch (cups) {
+            case 4:
+                console.log("case 4 exhibited !");
+                break;
+
+            case 3:
+                console.log("casee 3 exited "); 
+                break;   
+            
+            // 
+            default:
+                console.log("fudge");
+                break;
+        }
+
+
+
+
+
+
+
+        // Arrays & Objects in JavaScript | Web Development Tutorials #52
+        
+        
+        
+        let myvar =34;
+        let myvar2 = "this is string ";
+        let myvar3 = true;
+        let myvar4= undefined;
+        // undefined means no value 
+
+        // objects
+        // made a strucutre-> also known as employee as an object 
+
+        let employee={
+            name:"Harry",
+            salary:10,
+            channel:"codeWithdossa",
+            channel2:"programing with dossa",
+        }
+
+        console.log(employee);
+        console.log(employee.name);
+        console.log(employee.channel2);
+
+
+
+
+        // arrays
+        console.log(" ARRAYS \n\n\n");
+
+        // to make a dynamic array 
+        let names2 = new Array(1 ,2 ,3 , undefined , "code ");
+
+
+        let names= [1,4,3,4 , "hola amigo" , undefined ];
+        console.log(names);
+        console.log(names[0]);
+        console.log(names[4]);
+        console.log(names2);
+        console.log(names2[2]);
+
+
+
+        // length of an array
+        console.log(names.length);
+        console.log(names2.length);
+
+
+        // to sort n array
+        console.log(names.sort());
+
+        // to enter an element in an existing array
+        // the pushed element goes t the end of the array 
+        names.push("this element is pushed ");
+
+
+
+
+
+
+        // FUNCTIONS IN JS
+
+
+
+
+        let d="harry is a good boi ";
+        console.log( d + " hahhahah dope ");
+
+
+        // how to make a funtion
+        // function name: greet
+        function greet(name){
+            console.log(name + " just made  afunciton bruh !");
+        }
+
+
+        greet("hhahahahah");
+        greet("luci");
+        greet("jeo");
+
+
+
+        gM="hello mmoto";
+        hM="whatsup";
+
+        // function definition 
+        function display(g , h){
+            console.log( g + h +"dudez");
+
+        }
+
+        // function declaration 
+        display(gM, hM);
+
+
+
+        // return in funciton 
+
+        function sum(a,b,c){
+            let d= a + b + c ;
+            return d ;
+        }
+
+        console.log(sum(12,13,14));
+        let retval = sum(122,1212,12);
+        console.log(retval);
+
+
+
+
+        // HOW CAN WE MAKE A INTERACTIVE WEBSITE 
+        // INTERACTION, ALERT < PROMPT < CONFIRM
+
+
+        // ALErT in in-browser javascript 
+        // alert is a pop up message/
+        // when u give it  a string -> a modal portion opns which until yu dont agreeto  it wont let you do stuff
+        // on yur page 
+
+
+        // ALERT
+        alert(" PROBELLM DETECTED ");
+        // its return value is undefined 
+
+
+
+
+        // PROMPT in JS
+        // taking inputs - when entering a website for example 
+        let nameqw= prompt("What is your name? ");
+        // this would store ts return value -> when u entter ok
+
+
+        // would display the stored value on the console
+        console.log(nameqw);
+
+
+
+
+        // CONFIRM in JS
+
+        let dp= confirm(" Do you really want to delete this post ? ");
+        console.log(dp);
+
+        if ( dp == true){
+            console.log(" YOUR POST HAs been deleted successfully ");
+            // code to delete the post 
+        }
+        else{
+            console.log("YOUR POST HAS NOT BEEN DELETED !");
+            // cancel code to not delete the post 
+        }
+
+
+
+        
+
+
+
+
+
+        // LOOPS IN JS _ JAVA SCRIPT - tutorial 55
+
+
+        // FOR LOOPS
+        let i=0;
+        for (i=0 ;i<3 ; i++){
+            console.log(i);
+        }
+
+        // array iteration with for loop
+
+        let friends= ["rohan", "sandeep" , "luci"];
+
+        for ( let index=0  ; index<3 ; index++){
+            console.log(friends[index]);
+        }
+
+
+
+
+        // anothr way to this
+        // friends.forEach( function f(element){
+        //     console.log(element);
+        // });
+
+
+        // FOR OF LOOP
+
+        for ( element of friends){
+            console.log("heuer" + element)
+        ;}
+
+
+
+
+        let emp={
+            name:"Harry",
+            salary: 2 ,
+            channel: "CWH"
+        }
+
+        // this loop is used to iterate objects in js 
+        // for ( key in emp){
+            // console.log('The ${key} of employee is ${emp[key]} ');
+
+        // }
+
+
+
+
+
+        // WHILE LOOP
+        let t=0;
+        while ( t < 4){
+            console.log("t-var is less than 4 ");
+            t++;
+        }
+
+
+
+        i=0;
+        // DO WHILE 
+        do{
+            console.log(i);
+            i++;
+
+        }while(i<4);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+<!-- or you can add your js throught external page -->
+<!-- <script src="tut53.js"></script> -->
+</html>
+
+

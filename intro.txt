@@ -1,0 +1,70 @@
+why do u need js ?
+client side scripting lang.
+when button clicked -> the form would get submitted 
+
+
+whn u click on something or some button.
+u would get a blok change / clor cchange / algo applied / do some calulations 
+
+makes webpage aalive 
+
+sevrver pe data le ja sakte ho -> js ke through 
+it dynamicailly changes your model .
+
+
+dom-> is an object in js 
+dom-> a page , ehich consists of html, style tags ,  nav , section ettc 
+can insert a dynamic element in j s/ also make dom.
+
+its a live script-> jan daal deti he website me 
+
+js-> can also be used in backend while being used in browser(client side)
+node js-> backend js 
+
+backend-> php,python,node js, ettc languages 
+
+js ? where else it is used ->
+
+
+~TALKING ABOUT IN-BROWSER JS ONLI
+
+WHAT CAN IN-BROWSER JS do
+js-> in browser js used 
+-it should be safe design, which wont hurt the computer in any sort 
+- js :- react to events 
+event-> an action which the suer performs, or any response from the server , any  key pres , mouse movememnt 
+-AJAX request:- the request through network 
+- GET AND SET COOKIES :- whwen u login from a browser -> the browser set up cookies. and u wont have to put data agaian insdie the broswer ;
+istead it would automatically allocate cookies.
+
+
+
+WHAT CANT IN-BROWSER JS do
+-read/write a computer hard disk:- cant rewrite it
+thererfore u woont want any website to acess the file system data towards the computers accessing the websites 
+-AJAX request 
+u cant request access to cross-site data with js. which is perfect which js cant do since 
+we dont want it to take private dtaa of ours from any other tab or website like fb ettc
+`origin policy`
+
+
+
+what makes js unique ?
+-js has full support of html css
+- supports modern browser 
+- can turn off js as well
+
+
+js versions
+-maintained - witih its community 
+-ECMA-- gives u new uodates of js time to time
+itt gets updated veryre year - ecma does get updated 
+
+
+
+
+
+
+
+
+

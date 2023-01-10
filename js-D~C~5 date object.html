@@ -1,0 +1,93 @@
+<!-- JavaScript Tutorial: Date & Time In JavaScript | Web Development Tutorials #59 -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and timein js</title>
+</head>
+<style>
+
+    .cont{
+        font-size: 23px;
+        background-color: bisque;
+        border: 2px solid grey ;
+        padding :34px;
+        margin: 4px ;
+        text-align: center;
+
+    }
+</style>
+<body>
+    <div class="cont">
+        TIME:- 
+        <span id="time"></span>
+    </div>
+
+    <script>
+        console.log("this is date and time tutorial ");
+
+
+        // different ways to represent date in js ! 
+        let dt = new Date();
+        console.log(dt);
+
+        let dt2 = new Date(0);
+        console.log(dt2);
+
+        let dt3 = new Date(1000);
+        console.log(dt3);
+
+        let dt4 = new Date("2023-09-30");
+        console.log(dt4);
+
+        // let dt5 = new Date(year , month , date , hours , seconds , miliseconds);
+        let dt5= new Date(3020 , 4 , 6 , 9 , 4 , 2 );
+        console.log(dt5);
+
+
+         
+
+        // there aarre some fuciton now 
+
+        let yr = dt5.getFullYear();
+        console.log(" the year is " , yr);
+
+        let datee = dt5.getDate();
+
+        let month = dt5.getMonth();
+
+
+        let ohurs = dt5.getHours();
+
+
+
+        // setdate function :- to update date !
+        dt5.setDate(15);
+        console.log(dt5);
+
+        // t run update time every second 
+        setInterval(updateTime , 1000);
+        
+        
+        // updtAAES time of the span set in htmls div ! 
+        function updateTime(){
+
+            // time is the id ! of hte sapn tag -> 
+            time.innerHTML = new Date();
+        }
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
